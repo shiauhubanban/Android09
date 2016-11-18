@@ -12,7 +12,7 @@ import java.util.LinkedList;
 public class MainActivity extends AppCompatActivity {
     private ListView listView;
     private SimpleAdapter adapter;
-    private LinkedList<HashMap<String,String>> data;
+    private LinkedList<HashMap<String,String>> data ;
     private String[]from = {"shine"};
     private int[] to = {R.id.item_tv};
 
