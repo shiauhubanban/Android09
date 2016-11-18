@@ -45,18 +45,23 @@ public class MainActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Log.v("shine","click:"+position);
+                //Log.v("shine","click:"+position);
             }
         });
         listView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
             public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
-                Log.v("shine","long:"+position);
+                //Log.v("shine","long:"+position);
+                delItem(position);
                 return false;
             }
         });
 
 
-    }
 
+    }
+private void delItem(int pos){
+    data.remove(pos);
+    adapter.notifyDataSetChanged();
+}
 }
