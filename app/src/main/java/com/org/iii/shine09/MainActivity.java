@@ -15,7 +15,7 @@ import java.util.Objects;
 public class MainActivity extends AppCompatActivity {
     private ListView listView;
     private SimpleAdapter adapter;
-    private LinkedList<HashMap<String,Object>> data;    // 資料集
+    private LinkedList<HashMap<String,Object>> data;    //  資料集
     private String[] from = {"title", "content", "img"};
     private int[] to = {R.id.item_tv, R.id.item_content, R.id.item_img};
     private int[] imgs = {R.drawable.b0, R.drawable.b1, R.drawable.b2,R.drawable.b3};
